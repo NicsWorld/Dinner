@@ -1,0 +1,12 @@
+Eating In:
+  If not signed in, have them sign up or login.
+  Create and upload custom meals that we can vote on
+
+Eating out:
+ allow choices of genre of food choices, but also also allow random
+
+ Starting point:
+ only eating out?
+
+
+//api key AIzaSyC5C1uDK9MlpSx3wGSeZRj8WQyikuv2TwE
