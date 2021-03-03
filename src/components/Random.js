@@ -9,6 +9,7 @@ import CheckIcon from '@material-ui/icons/Check';
 import { green } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import final from '../final.jpg';
+import Loader from "react-loader-spinner";
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +30,7 @@ function Random() {
   const classes = useStyles();
   const [data, setData] = useState([]);
   const [selection, setSelection] = useState({});
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     let pos;
   navigator.geolocation.getCurrentPosition(position => {
@@ -56,18 +58,6 @@ function Random() {
   });
 },[]);
 
-// function parseResults() {
-//     return data.map((restaraunt, index) => {
-//       const photo = restaraunt.photos ? restaraunt.photos[0].getUrl({maxWidth: 35, maxHeight: 35}) : '';
-//       return (
-//         <div key={restaraunt.place_id}>
-//         <div key={index}>{restaraunt.name}</div>
-//         <img src={photo} />
-//         </div>
-//       );
-//   });
-// }
-return (
 <div className='selection'>
   <div id="map"></div>
     <Card className={classes.root}>
